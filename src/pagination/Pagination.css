@@ -1,0 +1,60 @@
+/* Pagination.css */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .page {
+    margin: 0 5px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .page:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .active {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .prev,
+  .next {
+    margin: 0 5px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .prev[disabled],
+  .next[disabled] {
+    color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 600px) {
+    .pagination {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .page,
+    .prev,
+    .next {
+      margin: 5px 0;
+    }
+  }
